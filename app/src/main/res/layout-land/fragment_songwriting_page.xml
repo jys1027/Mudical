@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".songwritingPageFragment"
+    android:screenOrientation="landscape"
+    android:orientation="horizontal">
+
+    <data>
+        <variable
+            name="songwritingpageFragment"
+            type="com.example.figmamudical.SongwritingPage" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6DF7A">
+
+        <View
+            android:id="@+id/program_seg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/program_segment_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="64dp"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/songwriting"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/songlisten_next_button"
+                android:layout_width="96dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/gray_button_frame"
+                android:onClick="@{() -> songwritingpageFragment.confirmSong()}"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/instrumentplay_next_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareotf_acb"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="선택하기"
+                app:layout_constraintBottom_toBottomOf="@+id/songlisten_next_button"
+                app:layout_constraintEnd_toEndOf="@+id/songlisten_next_button"
+                app:layout_constraintStart_toStartOf="@+id/songlisten_next_button"
+                app:layout_constraintTop_toTopOf="@+id/songlisten_next_button" />
+
+            <HorizontalScrollView
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="top">
+
+                    <View
+                        android:id="@+id/song_1"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:background="@drawable/song_cover1"
+                        android:onClick="@{() -> songwritingpageFragment.selectSong(1)}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/song_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nanumsquareotf_acb"
+                        android:text="@string/song1_title"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="@+id/song_1"
+                        app:layout_constraintStart_toStartOf="@+id/song_1"
+                        app:layout_constraintTop_toBottomOf="@+id/song_1" />
+
+                    <View
+                        android:id="@+id/song_2"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/song_cover2"
+                        android:onClick="@{() -> songwritingpageFragment.selectSong(2)}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/song_1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/song_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nanumsquareotf_acb"
+                        android:text="@string/song2_title"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="@+id/song_2"
+                        app:layout_constraintStart_toStartOf="@+id/song_2"
+                        app:layout_constraintTop_toBottomOf="@+id/song_2" />
+
+                    <View
+                        android:id="@+id/song_3"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/song_cover3"
+                        android:onClick="@{() -> songwritingpageFragment.selectSong(3)}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/song_2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/song_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nanumsquareotf_acb"
+                        android:text="@string/song3_title"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="@+id/song_3"
+                        app:layout_constraintStart_toStartOf="@+id/song_3"
+                        app:layout_constraintTop_toBottomOf="@+id/song_3" />
+
+                    <View
+                        android:id="@+id/song_4"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/song_cover4"
+                        android:onClick="@{() -> songwritingpageFragment.selectSong(4)}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/song_3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/song_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nanumsquareotf_acb"
+                        android:text="@string/song4_title"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="@+id/song_4"
+                        app:layout_constraintStart_toStartOf="@+id/song_4"
+                        app:layout_constraintTop_toBottomOf="@+id/song_4" />
+
+                    <View
+                        android:id="@+id/song_5"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/song_cover5"
+                        android:onClick="@{() -> songwritingpageFragment.selectSong(5)}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/song_4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/song_text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nanumsquareotf_acb"
+                        android:text="@string/song5_title"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="@+id/song_5"
+                        app:layout_constraintStart_toStartOf="@+id/song_5"
+                        app:layout_constraintTop_toBottomOf="@+id/song_5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <View
+                android:id="@+id/instrumentplay_act_bar1"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:background="@drawable/rectangle_gray"
+                app:layout_constraintBottom_toTopOf="@+id/allign_maker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <View
+                android:id="@+id/allign_maker"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/instrumentplay_act_bar1" />
+
+            <View
+                android:id="@+id/line_55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/white_dot_line"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <View
+                android:id="@+id/step1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="64dp"
+                android:background="@drawable/gray_dot"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintStart_toStartOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <View
+                android:id="@+id/marker1"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/mudi_marker"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toEndOf="@+id/step1"
+                app:layout_constraintStart_toStartOf="@+id/step1"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nanumsquareotf_acb"
+                android:textSize="12sp"
+                android:textColor="@color/yellow"
+                android:text="노래를\n골라봐요"
+                app:layout_constraintEnd_toEndOf="@+id/step1"
+                app:layout_constraintStart_toStartOf="@+id/step1"
+                app:layout_constraintTop_toBottomOf="@+id/step1" />
+
+            <View
+                android:id="@+id/step2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/gray_dot"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toStartOf="@+id/step3"
+                app:layout_constraintStart_toEndOf="@+id/step1"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <View
+                android:id="@+id/marker2"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toEndOf="@+id/step2"
+                app:layout_constraintStart_toStartOf="@+id/step2"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nanumsquareotf_acb"
+                android:textSize="12sp"
+                android:textColor="@color/light_gray"
+                android:text="노래를\n들어봐요"
+                app:layout_constraintEnd_toEndOf="@+id/step2"
+                app:layout_constraintStart_toStartOf="@+id/step2"
+                app:layout_constraintTop_toBottomOf="@+id/step2" />
+
+            <View
+                android:id="@+id/step3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/gray_dot"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toStartOf="@+id/step4"
+                app:layout_constraintStart_toEndOf="@+id/step2"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <View
+                android:id="@+id/marker3"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toEndOf="@+id/step3"
+                app:layout_constraintStart_toStartOf="@+id/step3"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nanumsquareotf_acb"
+                android:textSize="12sp"
+                android:textColor="@color/light_gray"
+                android:text="가사와 함께\n노래를 불러봐요"
+                app:layout_constraintEnd_toEndOf="@+id/step3"
+                app:layout_constraintStart_toStartOf="@+id/step3"
+                app:layout_constraintTop_toBottomOf="@+id/step3" />
+
+            <View
+                android:id="@+id/step4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/gray_dot"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toStartOf="@+id/step5"
+                app:layout_constraintStart_toEndOf="@+id/step3"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <View
+                android:id="@+id/marker4"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toEndOf="@+id/step4"
+                app:layout_constraintStart_toStartOf="@+id/step4"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nanumsquareotf_acb"
+                android:textSize="12sp"
+                android:textColor="@color/light_gray"
+                android:text="나만의 가사지를\n작성해 봐요"
+                app:layout_constraintEnd_toEndOf="@+id/step4"
+                app:layout_constraintStart_toStartOf="@+id/step4"
+                app:layout_constraintTop_toBottomOf="@+id/step4" />
+
+            <View
+                android:id="@+id/step5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="64dp"
+                android:background="@drawable/gray_dot"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toEndOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <View
+                android:id="@+id/marker5"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/instrumentplay_act_bar1"
+                app:layout_constraintEnd_toEndOf="@+id/step5"
+                app:layout_constraintStart_toStartOf="@+id/step5"
+                app:layout_constraintTop_toTopOf="@+id/instrumentplay_act_bar1" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nanumsquareotf_acb"
+                android:textSize="12sp"
+                android:textColor="@color/light_gray"
+                android:text="나만의 노래를\n불러 봐요"
+                app:layout_constraintEnd_toEndOf="@+id/step5"
+                app:layout_constraintStart_toStartOf="@+id/step5"
+                app:layout_constraintTop_toBottomOf="@+id/step5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

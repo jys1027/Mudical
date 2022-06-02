@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".joinPageFragment">
+
+    <data>
+        <variable
+            name="joinpageFragment"
+            type="com.example.figmamudical.JoinPage" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/join_page_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/secular_one"
+            android:text="@string/mudical"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/join_page_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/join"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/join_page_text1"
+            app:layout_constraintTop_toBottomOf="@+id/join_page_text1" />
+
+        <View
+            android:id="@+id/join_box1"
+            android:layout_width="285.42dp"
+            android:layout_height="44.03dp"
+            android:background="@drawable/rectangle_text_box"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/join_box2"
+            android:layout_width="285.42dp"
+            android:layout_height="44.03dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangle_text_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_box1" />
+
+        <View
+            android:id="@+id/join_box3"
+            android:layout_width="285.42dp"
+            android:layout_height="44.03dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangle_text_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_box2" />
+
+        <View
+            android:id="@+id/join_box4"
+            android:layout_width="285.42dp"
+            android:layout_height="44.03dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangle_text_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_box3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/join_box1_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/join_box1"
+            app:layout_constraintStart_toStartOf="@+id/join_box1"
+            app:layout_constraintTop_toTopOf="@+id/join_box1">
+
+            <View
+                android:id="@+id/join_box_draw1_top"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/rectangle_42_ek1_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/join_box_draw1_bottom"
+                android:layout_width="14.2dp"
+                android:layout_height="6dp"
+                android:src="@drawable/vector_16"
+                app:layout_constraintEnd_toEndOf="@+id/join_box_draw1_top"
+                app:layout_constraintStart_toStartOf="@+id/join_box_draw1_top"
+                app:layout_constraintTop_toBottomOf="@+id/join_box_draw1_top" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/join_box2_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/join_box2"
+            app:layout_constraintStart_toStartOf="@+id/join_box2"
+            app:layout_constraintTop_toTopOf="@+id/join_box2">
+
+            <ImageView
+                android:id="@+id/join_box2_draw_bottom"
+                android:layout_width="12.78dp"
+                android:layout_height="11.36dp"
+                android:src="@drawable/vector_19"
+                app:layout_constraintEnd_toEndOf="@+id/join_box2_draw_top"
+                app:layout_constraintStart_toStartOf="@+id/join_box2_draw_top"
+                app:layout_constraintTop_toBottomOf="@+id/join_box2_draw_top" />
+
+            <View
+                android:id="@+id/join_box2_draw_e1"
+                android:layout_width="1.42dp"
+                android:layout_height="2.84dp"
+                android:background="@drawable/rectangle_43_ek1_shape"
+                app:layout_constraintEnd_toEndOf="@+id/join_box2_draw_bottom"
+                app:layout_constraintStart_toStartOf="@+id/join_box2_draw_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/join_box2_draw_top" />
+
+            <View
+                android:id="@+id/join_box2_draw_e2"
+                android:layout_width="2.49dp"
+                android:layout_height="2.49dp"
+                android:background="@drawable/ellipse_12_shape"
+                app:layout_constraintEnd_toEndOf="@+id/join_box2_draw_bottom"
+                app:layout_constraintStart_toStartOf="@+id/join_box2_draw_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/join_box2_draw_top" />
+
+            <ImageView
+                android:id="@+id/join_box2_draw_top"
+                android:layout_width="7.1dp"
+                android:layout_height="5.68dp"
+                android:src="@drawable/vector_20"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/join_box_draw3"
+            android:layout_width="14.2dp"
+            android:layout_height="11.36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/vector_63"
+            app:layout_constraintBottom_toBottomOf="@+id/join_box3"
+            app:layout_constraintStart_toStartOf="@+id/join_box3"
+            app:layout_constraintTop_toTopOf="@+id/join_box3" />
+
+        <View
+            android:id="@+id/join_box_draw4"
+            android:layout_width="17.05dp"
+            android:layout_height="9.94dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/vector_65"
+            app:layout_constraintBottom_toBottomOf="@+id/join_box4"
+            app:layout_constraintStart_toStartOf="@+id/join_box4"
+            app:layout_constraintTop_toTopOf="@+id/join_box4" />
+
+        <EditText
+            android:id="@+id/join_text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textPersonName"
+            android:minHeight="16dp"
+            android:text="@string/username"
+            android:textColor="@color/gray_edittext_color"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/join_box1"
+            app:layout_constraintStart_toStartOf="@+id/join_box1"
+            app:layout_constraintTop_toTopOf="@+id/join_box1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/join_text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textPassword"
+            android:text="@string/password"
+            android:textColor="@color/gray_edittext_color"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/join_box2"
+            app:layout_constraintStart_toStartOf="@+id/join_box2"
+            app:layout_constraintTop_toTopOf="@+id/join_box2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/join_text_password_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textPassword"
+            android:text="@string/password"
+            android:textColor="@color/gray_edittext_color"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/join_box3"
+            app:layout_constraintStart_toStartOf="@+id/join_box3"
+            app:layout_constraintTop_toTopOf="@+id/join_box3"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/join_text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textEmailAddress"
+            android:minHeight="16dp"
+            android:text="@string/email"
+            android:textColor="@color/gray_edittext_color"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/join_box4"
+            app:layout_constraintStart_toStartOf="@+id/join_box4"
+            app:layout_constraintTop_toTopOf="@+id/join_box4"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <View
+            android:id="@+id/join_button"
+            android:layout_width="284dp"
+            android:layout_height="42.61dp"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/rectangle_44_shape"
+            android:onClick="@{() -> joinpageFragment.tryJoin()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_box4" />
+
+        <TextView
+            android:id="@+id/join_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_44_shape"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/join2"
+            android:textColor="@color/_bg__loding_page_ek2_color"
+            android:textSize="14.2sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/join_button"
+            app:layout_constraintEnd_toEndOf="@+id/join_button"
+            app:layout_constraintStart_toStartOf="@+id/join_button"
+            app:layout_constraintTop_toTopOf="@+id/join_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

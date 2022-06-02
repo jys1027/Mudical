@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mainmudicalpageFragment">
+
+    <data>
+        <variable
+            name="mainmudicalpageFragment"
+            type="com.example.figmamudical.MainMudicalPage" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/asset_1_1_ek2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/asset_1_1_ek2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/asset_1_2_ek2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/asset_1_2_ek2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asset_1_1_ek2" />
+
+        <View
+            android:id="@+id/rectangle_138_ek2"
+            android:layout_width="341dp"
+            android:layout_height="169dp"
+            android:background="@drawable/rectangle_138_ek2_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asset_1_1_ek2" />
+
+        <View
+            android:id="@+id/rectangle_141_ek2"
+            android:layout_width="319dp"
+            android:layout_height="147dp"
+            android:background="@drawable/rectangle_141_ek2_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_138_ek2"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_138_ek2"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_138_ek2"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_138_ek2" />
+
+
+        <View
+            android:id="@+id/rectangle_137_ek2"
+            android:layout_width="336dp"
+            android:layout_height="37dp"
+            android:background="@drawable/rectangle_137_ek2_shape"
+            app:layout_constraintBottom_toTopOf="@+id/rectangle_138_ek2"
+            app:layout_constraintEnd_toEndOf="@+id/asset_1_1_ek2"
+            app:layout_constraintStart_toStartOf="@+id/asset_1_1_ek2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/ellipse_62_ek2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ellipse_62_ek2_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_137_ek2"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_137_ek2"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_137_ek2" />
+
+        <View
+            android:id="@+id/line_1_ek2"
+            android:layout_width="7.17dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/line_1_ek2_shape"
+            android:rotation="45"
+            app:layout_constraintStart_toEndOf="@+id/ellipse_62_ek2"
+            app:layout_constraintTop_toBottomOf="@+id/ellipse_62_ek2" />
+
+        <TextView
+            android:id="@+id/mudical_ek33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/secular_one"
+            android:text="@string/mudical"
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/asset_1_1_ek2"
+            app:layout_constraintStart_toStartOf="@+id/asset_1_1_ek2"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_137_ek2" />
+
+        <TextView
+            android:id="@+id/__________ek8_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="top"
+            android:text="오늘의 치유활동"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_141_ek2"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_141_ek2" />
+
+        <TextView
+            android:id="@+id/this_week_segment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="3주차_즉흥 악기 연주"
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_141_ek2"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_141_ek2"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_141_ek2"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_141_ek2" />
+
+        <TextView
+            android:id="@+id/this_week_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="2021.10.18 ~ 2021.10.24"
+            android:textColor="@color/gray"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/this_week_segment"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_141_ek2"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_141_ek2" />
+
+        <View
+            android:id="@+id/go_to_segment_button"
+            android:layout_width="158dp"
+            android:layout_height="36dp"
+            android:background="@drawable/rectangle_149_shape"
+            android:onClick="@{() -> mainmudicalpageFragment.goToSegment()}"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_141_ek2"
+            app:layout_constraintEnd_toEndOf="@+id/this_week_segment"
+            app:layout_constraintStart_toStartOf="@+id/this_week_segment"
+            app:layout_constraintTop_toBottomOf="@+id/this_week_segment" />
+
+        <TextView
+            android:id="@+id/go_to_segment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="바로 하러가기"
+            android:textColor="@color/_bg__loding_page_ek2_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/go_to_segment_button"
+            app:layout_constraintEnd_toEndOf="@+id/go_to_segment_button"
+            app:layout_constraintStart_toStartOf="@+id/go_to_segment_button"
+            app:layout_constraintTop_toTopOf="@+id/go_to_segment_button" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="20dp"
+            android:layout_height="24.41dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/icon"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_141_ek2"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_141_ek2" />
+
+        <View
+            android:id="@+id/ellipse_68"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginStart="-8dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/ellipse_68_shape"
+            app:layout_constraintBottom_toTopOf="@+id/icon"
+            app:layout_constraintStart_toEndOf="@+id/icon" />
+
+        <TextView
+            android:id="@+id/segments_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="주차별 치유 활동"
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_138_ek2"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_138_ek2" />
+
+        <View
+            android:id="@+id/segment_left_box1"
+            android:layout_width="233dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectangle_segment"
+            android:onClick="@{() -> mainmudicalpageFragment.forceSegment(1)}"
+            app:layout_constraintStart_toStartOf="@+id/segments_title"
+            app:layout_constraintTop_toBottomOf="@+id/segments_title" />
+
+        <ImageView
+            android:id="@+id/mudi_emotion_analysis"
+            android:layout_width="56dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/mudi"
+            app:layout_constraintBottom_toBottomOf="@+id/segment_left_box1"
+            app:layout_constraintStart_toStartOf="@+id/segment_left_box1"
+            app:layout_constraintTop_toTopOf="@+id/segment_left_box1" />
+
+        <TextView
+            android:id="@+id/segment_left_box1_text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/songwriting"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/mudi_emotion_analysis"
+            app:layout_constraintTop_toTopOf="@+id/mudi_emotion_analysis" />
+
+        <TextView
+            android:id="@+id/segment_left_box1_text_bottom"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="기존 노래가사를 자신의 상황에 맞게 개사하여 노래를 불러보는 활동"
+            android:textColor="@color/dark_gray"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/mudi_emotion_analysis"
+            app:layout_constraintTop_toBottomOf="@+id/segment_left_box1_text_top" />
+
+        <View
+            android:id="@+id/segment_right_box1"
+            android:layout_width="74dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/rectangle_segment_image"
+            app:layout_constraintStart_toEndOf="@+id/segment_left_box1"
+            app:layout_constraintTop_toTopOf="@+id/segment_left_box1" />
+
+        <ImageView
+            android:id="@+id/cover_image_songwriting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cover_image_songwriting"
+            app:layout_constraintEnd_toEndOf="@+id/segment_right_box1"
+            app:layout_constraintStart_toStartOf="@+id/segment_right_box1"
+            app:layout_constraintTop_toTopOf="@+id/segment_right_box1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:text="#송라이팅"
+            app:layout_constraintEnd_toEndOf="@+id/segment_right_box1"
+            app:layout_constraintStart_toStartOf="@+id/segment_right_box1"
+            app:layout_constraintTop_toBottomOf="@+id/cover_image_songwriting" />
+
+        <View
+            android:id="@+id/segment_left_box2"
+            android:layout_width="233dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_segment"
+            android:onClick="@{() -> mainmudicalpageFragment.forceSegment(2)}"
+            app:layout_constraintStart_toStartOf="@+id/segments_title"
+            app:layout_constraintTop_toBottomOf="@+id/segment_left_box1" />
+
+        <ImageView
+            android:id="@+id/segment_left_mudi2"
+            android:layout_width="56dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/mudi"
+            app:layout_constraintBottom_toBottomOf="@+id/segment_left_box2"
+            app:layout_constraintStart_toStartOf="@+id/segment_left_box2"
+            app:layout_constraintTop_toTopOf="@+id/segment_left_box2" />
+
+        <TextView
+            android:id="@+id/segment_left_box2_text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/instrumentplay"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/segment_left_mudi2"
+            app:layout_constraintTop_toTopOf="@+id/segment_left_mudi2" />
+
+        <TextView
+            android:id="@+id/segment_left_box2_text_bottom"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="지시에 맞춰 정해진 악기를 증흥적으로 연주하며 자신의 음악을 만드는 활동"
+            android:textColor="@color/dark_gray"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/segment_left_mudi2"
+            app:layout_constraintTop_toBottomOf="@+id/segment_left_box2_text_top" />
+
+        <View
+            android:id="@+id/segment_right_box2"
+            android:layout_width="74dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/rectangle_segment_image"
+            app:layout_constraintStart_toEndOf="@+id/segment_left_box2"
+            app:layout_constraintTop_toTopOf="@+id/segment_left_box2" />
+
+        <ImageView
+            android:id="@+id/cover_image_instrumentplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cover_image_instrumentplay"
+            app:layout_constraintEnd_toEndOf="@+id/segment_right_box2"
+            app:layout_constraintStart_toStartOf="@+id/segment_right_box2"
+            app:layout_constraintTop_toTopOf="@+id/segment_right_box2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:text="#악기 연주"
+            app:layout_constraintEnd_toEndOf="@+id/segment_right_box2"
+            app:layout_constraintStart_toStartOf="@+id/segment_right_box2"
+            app:layout_constraintTop_toBottomOf="@+id/cover_image_instrumentplay" />
+
+        <ImageView
+            android:id="@+id/bar_mudical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bar_mudical_selected"
+            android:onClick="@{() -> mainmudicalpageFragment.barBelow(0)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/bar_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bar_home"
+            android:onClick="@{() -> mainmudicalpageFragment.barBelow(1)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/bar_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bar_my"
+            android:onClick="@{() -> mainmudicalpageFragment.barBelow(2)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

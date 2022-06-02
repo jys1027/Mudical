@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".tutorialPageFragment">
+
+    <data>
+        <variable
+            name="tutorialpageFragment"
+            type="com.example.figmamudical.TutorialPage" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/join_success_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/secular_one"
+            android:text="@string/mudical"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintVertical_bias="0.076"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/join_success_mudi"
+            android:layout_width="215dp"
+            android:layout_height="282dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mudi2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.440"
+            app:layout_constraintVertical_bias="0.278" />
+
+        <View
+            android:id="@+id/mudi_text_box"
+            android:layout_width="300dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="24dp"
+            android:alpha="0.33000001311302"
+            android:background="@drawable/rectangle_55_shape"
+            android:onClick="@{() -> tutorialpageFragment.chooseBox(0)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_success_mudi" />
+
+        <ImageView
+            android:id="@+id/mudi_text_arrow"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/polygon_1"
+            app:layout_constraintBottom_toBottomOf="@+id/mudi_text_box"
+            app:layout_constraintEnd_toEndOf="@+id/mudi_text_box" />
+
+        <View
+            android:id="@+id/tutorial_choose_box1"
+            android:layout_width="129.4dp"
+            android:layout_height="35.4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/select_box"
+            android:onClick="@{() -> tutorialpageFragment.chooseBox(1)}"
+            app:layout_constraintStart_toStartOf="@+id/mudi_text_box"
+            app:layout_constraintTop_toBottomOf="@+id/mudi_text_box" />
+
+        <TextView
+            android:id="@+id/tutorial_choose_text1"
+            android:layout_width="139dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_horizontal|center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tutorial_choose_box1"
+            app:layout_constraintEnd_toEndOf="@id/tutorial_choose_box1"
+            app:layout_constraintStart_toStartOf="@id/tutorial_choose_box1"
+            app:layout_constraintTop_toTopOf="@id/tutorial_choose_box1" />
+
+        <View
+            android:id="@+id/tutorial_choose_box2"
+            android:layout_width="129.4dp"
+            android:layout_height="35.4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/select_box"
+            android:onClick="@{() -> tutorialpageFragment.chooseBox(2)}"
+            app:layout_constraintEnd_toEndOf="@+id/mudi_text_box"
+            app:layout_constraintTop_toBottomOf="@+id/mudi_text_box" />
+
+        <TextView
+            android:id="@+id/tutorial_choose_text2"
+            android:layout_width="139dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_horizontal|center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tutorial_choose_box2"
+            app:layout_constraintEnd_toEndOf="@id/tutorial_choose_box2"
+            app:layout_constraintStart_toStartOf="@id/tutorial_choose_box2"
+            app:layout_constraintTop_toTopOf="@id/tutorial_choose_box2" />
+
+        <View
+            android:id="@+id/tutorial_choose_box3"
+            android:layout_width="129.4dp"
+            android:layout_height="35.4dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:onClick="@{() -> tutorialpageFragment.chooseBox(3)}"
+            app:layout_constraintEnd_toEndOf="@+id/tutorial_choose_box1"
+            app:layout_constraintStart_toStartOf="@+id/tutorial_choose_box1"
+            app:layout_constraintTop_toBottomOf="@+id/tutorial_choose_box1" />
+
+        <TextView
+            android:id="@+id/tutorial_choose_text3"
+            android:layout_width="139dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_horizontal|center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tutorial_choose_box3"
+            app:layout_constraintEnd_toEndOf="@id/tutorial_choose_box3"
+            app:layout_constraintStart_toStartOf="@id/tutorial_choose_box3"
+            app:layout_constraintTop_toTopOf="@id/tutorial_choose_box3" />
+
+        <View
+            android:id="@+id/tutorial_choose_box4"
+            android:layout_width="129.4dp"
+            android:layout_height="35.4dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:onClick="@{() -> tutorialpageFragment.chooseBox(4)}"
+            app:layout_constraintEnd_toEndOf="@+id/tutorial_choose_box2"
+            app:layout_constraintStart_toStartOf="@+id/tutorial_choose_box2"
+            app:layout_constraintTop_toBottomOf="@+id/tutorial_choose_box2" />
+
+        <TextView
+            android:id="@+id/tutorial_choose_text4"
+            android:layout_width="139dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_horizontal|center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tutorial_choose_box4"
+            app:layout_constraintEnd_toEndOf="@id/tutorial_choose_box4"
+            app:layout_constraintStart_toStartOf="@id/tutorial_choose_box4"
+            app:layout_constraintTop_toTopOf="@id/tutorial_choose_box4" />
+
+        <View
+            android:id="@+id/tutorial_choose_box5"
+            android:layout_width="129.4dp"
+            android:layout_height="35.4dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:onClick="@{() -> tutorialpageFragment.chooseBox(5)}"
+            app:layout_constraintEnd_toEndOf="@+id/tutorial_choose_box3"
+            app:layout_constraintStart_toStartOf="@+id/tutorial_choose_box3"
+            app:layout_constraintTop_toBottomOf="@+id/tutorial_choose_box3" />
+
+        <TextView
+            android:id="@+id/tutorial_choose_text5"
+            android:layout_width="139dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_horizontal|center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tutorial_choose_box5"
+            app:layout_constraintEnd_toEndOf="@id/tutorial_choose_box5"
+            app:layout_constraintStart_toStartOf="@id/tutorial_choose_box5"
+            app:layout_constraintTop_toTopOf="@id/tutorial_choose_box5" />
+
+        <TextView
+            android:id="@+id/tutorial_mudi_text"
+            android:layout_width="273dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/secular_one"
+            android:gravity="top"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mudi_text_box"
+            app:layout_constraintEnd_toEndOf="@+id/mudi_text_box"
+            app:layout_constraintStart_toStartOf="@+id/mudi_text_box"
+            app:layout_constraintTop_toTopOf="@+id/mudi_text_box" />
+
+        <View
+            android:id="@+id/save_button"
+            android:layout_width="207dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_gray"
+            android:onClick="@{() -> tutorialpageFragment.chooseBox(6)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/save_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/save_button"
+            app:layout_constraintEnd_toEndOf="@+id/save_button"
+            app:layout_constraintStart_toStartOf="@+id/save_button"
+            app:layout_constraintTop_toTopOf="@+id/save_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

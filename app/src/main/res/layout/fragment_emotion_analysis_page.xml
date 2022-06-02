@@ -1,0 +1,196 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EmotionAnalysisPage"
+    android:screenOrientation="landscape"
+    android:orientation="horizontal">
+
+    <data>
+        <variable
+            name="emotionanalysispageFragment"
+            type="com.example.figmamudical.EmotionAnalysisPage" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6DF7A">
+
+        <View
+            android:id="@+id/program_seg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/program_segment_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/emotion_bar_1"
+            android:layout_width="122dp"
+            android:layout_height="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_159_shape"
+            app:layout_constraintBottom_toTopOf="@+id/emotion_bar_2"
+            app:layout_constraintStart_toStartOf="@+id/emotion_bar_2" />
+
+        <View
+            android:id="@+id/emotion_bar_2"
+            android:layout_width="122dp"
+            android:layout_height="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_159_shape"
+            app:layout_constraintBottom_toTopOf="@+id/emotion_bar_3"
+            app:layout_constraintStart_toStartOf="@+id/emotion_bar_3" />
+
+        <View
+            android:id="@+id/emotion_bar_3"
+            android:layout_width="122dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="128dp"
+            android:background="@drawable/rectangle_159_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emotions_title" />
+
+        <View
+            android:id="@+id/emotion_bar_4"
+            android:layout_width="122dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectangle_159_shape"
+            app:layout_constraintStart_toStartOf="@+id/emotion_bar_3"
+            app:layout_constraintTop_toBottomOf="@+id/emotion_bar_3" />
+
+        <View
+            android:id="@+id/emotion_bar_5"
+            android:layout_width="122dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectangle_159_shape"
+            app:layout_constraintStart_toStartOf="@+id/emotion_bar_4"
+            app:layout_constraintTop_toBottomOf="@+id/emotion_bar_4" />
+
+        <TextView
+            android:id="@+id/emotion_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="기쁨"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/emotion_bar_1"
+            app:layout_constraintEnd_toStartOf="@+id/emotion_bar_1"
+            app:layout_constraintTop_toTopOf="@+id/emotion_bar_1" />
+
+        <TextView
+            android:id="@+id/emotion_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="슬픔"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/emotion_bar_2"
+            app:layout_constraintEnd_toStartOf="@+id/emotion_bar_2"
+            app:layout_constraintTop_toTopOf="@+id/emotion_bar_2" />
+
+        <TextView
+            android:id="@+id/emotion_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="화남"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/emotion_bar_3"
+            app:layout_constraintEnd_toStartOf="@+id/emotion_bar_3"
+            app:layout_constraintTop_toTopOf="@+id/emotion_bar_3" />
+
+        <TextView
+            android:id="@+id/emotion_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="불안"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/emotion_bar_4"
+            app:layout_constraintEnd_toStartOf="@+id/emotion_bar_4"
+            app:layout_constraintTop_toTopOf="@+id/emotion_bar_4" />
+
+        <TextView
+            android:id="@+id/emotion_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="중립"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/emotion_bar_5"
+            app:layout_constraintEnd_toStartOf="@+id/emotion_bar_5"
+            app:layout_constraintTop_toTopOf="@+id/emotion_bar_5" />
+
+        <ImageView
+            android:id="@+id/mudi_emotion_analysis"
+            android:layout_width="84dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/mudi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/program_seg"
+            app:layout_constraintTop_toTopOf="@+id/program_seg" />
+
+        <TextView
+            android:id="@+id/comment_text"
+            android:layout_width="263dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/example_comment_1"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/mudi_emotion_analysis"
+            app:layout_constraintTop_toBottomOf="@+id/mudi_emotion_analysis" />
+
+
+        <View
+            android:id="@+id/finish_button"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/gray_button_frame"
+            android:onClick="@{() -> emotionanalysispageFragment.finishSegment()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/finish_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:text="@string/finish"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/finish_button"
+            app:layout_constraintEnd_toEndOf="@+id/finish_button"
+            app:layout_constraintStart_toStartOf="@+id/finish_button"
+            app:layout_constraintTop_toTopOf="@+id/finish_button" />
+
+        <TextView
+            android:id="@+id/emotions_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="감정 상태 분석"
+            android:textColor="@color/mudical_ek1_color"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/emotion_text_3"
+            app:layout_constraintTop_toTopOf="@+id/program_seg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

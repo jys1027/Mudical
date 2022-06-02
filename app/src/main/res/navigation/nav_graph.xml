@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginPage">
+
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.figmamudical.LoginPage"
+        android:label="LoginPage" >
+        <action
+            android:id="@+id/action_loginPage_to_joinPage"
+            app:destination="@id/joinPage" />
+        <action
+            android:id="@+id/action_loginPage_to_tutorialPage"
+            app:destination="@id/tutorialPage" />
+        <action
+            android:id="@+id/action_loginPage_to_mainHomePage"
+            app:destination="@id/mainHomePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/joinPage"
+        android:name="com.example.figmamudical.JoinPage"
+        android:label="JoinPage" >
+        <action
+            android:id="@+id/action_joinPage_to_welcomePage"
+            app:destination="@id/welcomePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorialPage"
+        android:name="com.example.figmamudical.TutorialPage"
+        android:label="TutorialPage" >
+        <action
+            android:id="@+id/action_tutorialPage_to_mainHomePage"
+            app:destination="@id/mainHomePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomePage"
+        android:name="com.example.figmamudical.WelcomePage"
+        android:label="WelcomePage" >
+        <action
+            android:id="@+id/action_welcomePage_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMyPage"
+        android:name="com.example.figmamudical.MainMyPage"
+        android:label="MainMyPage" >
+        <action
+            android:id="@+id/action_mainMyPage_to_mainHomePage"
+            app:destination="@id/mainHomePage" />
+        <action
+            android:id="@+id/action_mainMyPage_to_mainMudicalPage"
+            app:destination="@id/mainMudicalPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainHomePage"
+        android:name="com.example.figmamudical.MainHomePage"
+        android:label="MainHomePage">
+        <action
+            android:id="@+id/action_mainHomePage_to_songwritingPage"
+            app:destination="@id/songwritingPage" />
+        <action
+            android:id="@+id/action_mainHomePage_to_instrumentplayPage"
+            app:destination="@id/instrumentplayPage" />
+        <action
+            android:id="@+id/action_mainHomePage_to_mainMyPage"
+            app:destination="@id/mainMyPage" />
+        <action
+            android:id="@+id/action_mainHomePage_to_mainMudicalPage"
+            app:destination="@id/mainMudicalPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/songwritingPage"
+        android:name="com.example.figmamudical.SongwritingPage"
+        android:label="SongwritingPage" >
+        <action
+            android:id="@+id/action_songwritingPage_to_songwritingListenPage"
+            app:destination="@id/songwritingListenPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/songwritingActPage"
+        android:name="com.example.figmamudical.SongwritingActPage"
+        android:label="SongwritingActPage" >
+        <action
+            android:id="@+id/action_songwritingActPage_to_emotionAnalysisPage"
+            app:destination="@id/emotionAnalysisPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/instrumentplayPage"
+        android:name="com.example.figmamudical.InstrumentplayPage"
+        android:label="InstrumentplayPage" >
+        <action
+            android:id="@+id/action_instrumentplayPage_to_instrumentplayExplainPage"
+            app:destination="@id/instrumentplayExplainPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/instrumentplayActPage"
+        android:name="com.example.figmamudical.InstrumentplayActPage"
+        android:label="fragment_instrumentplay_act_page"
+        tools:layout="@layout/fragment_instrumentplay_act_page" >
+        <action
+            android:id="@+id/action_instrumentplayActPage_to_emotionAnalysisPage"
+            app:destination="@id/emotionAnalysisPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/instrumentplayChoosePage"
+        android:name="com.example.figmamudical.InstrumentplayChoosePage"
+        android:label="fragment_instrumentplay_choose_page"
+        tools:layout="@layout/fragment_instrumentplay_choose_page" >
+        <action
+            android:id="@+id/action_instrumentplayChoosePage_to_instrumentplayPracticePage"
+            app:destination="@id/instrumentplayPracticePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/instrumentplayPracticePage"
+        android:name="com.example.figmamudical.InstrumentplayPracticePage"
+        android:label="InstrumentplayPracticePage" >
+        <action
+            android:id="@+id/action_instrumentplayPracticePage_to_instrumentplayActPage"
+            app:destination="@id/instrumentplayActPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/songwritingListenPage"
+        android:name="com.example.figmamudical.SongwritingListenPage"
+        android:label="SongwritingListenPage" >
+        <action
+            android:id="@+id/action_songwritingListenPage_to_songwritingActPage"
+            app:destination="@id/songwritingActPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/instrumentplayExplainPage"
+        android:name="com.example.figmamudical.InstrumentplayExplainPage"
+        android:label="InstrumentplayExplainPage" >
+        <action
+            android:id="@+id/action_instrumentplayExplainPage_to_instrumentplayChoosePage"
+            app:destination="@id/instrumentplayChoosePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMudicalPage"
+        android:name="com.example.figmamudical.MainMudicalPage"
+        android:label="MainMudicalPage" >
+        <action
+            android:id="@+id/action_mainMudicalPage_to_mainMyPage"
+            app:destination="@id/mainMyPage" />
+        <action
+            android:id="@+id/action_mainMudicalPage_to_mainHomePage"
+            app:destination="@id/mainHomePage" />
+        <action
+            android:id="@+id/action_mainMudicalPage_to_songwritingPage"
+            app:destination="@id/songwritingPage" />
+        <action
+            android:id="@+id/action_mainMudicalPage_to_instrumentplayPage"
+            app:destination="@id/instrumentplayPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/emotionAnalysisPage"
+        android:name="com.example.figmamudical.EmotionAnalysisPage"
+        android:label="fragment_emotion_analysis_page"
+        tools:layout="@layout/fragment_emotion_analysis_page" >
+        <action
+            android:id="@+id/action_emotionAnalysisPage_to_mainHomePage"
+            app:destination="@id/mainHomePage" />
+    </fragment>
+</navigation>

@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">FigmaMudical</string>
+
+    <string name="mudical">Mudical</string>
+    <string name="username">아이디</string>
+    <string name="password">Password</string>
+    <string name="email">이메일</string>
+    <string name="login">로그인</string>
+    <string name="join">회원가입</string>
+    <string name="join2">회원가입하기</string>
+    <string name="find_id">아이디 찾기</string>
+    <string name="find_pw">비밀번호 찾기</string>
+    <string name="bar"> | </string>
+    <string name="login_page_text1">음악치료로</string>
+    <string name="login_page_text2">한 발자국 나아가기</string>
+    <string name="welcome">Mudical의 친구가 되신 걸\n축하드려요!</string>
+    <string name="welcome2">로그인 후 정식 뮤디커리안이 되어 보아요 :)</string>
+    <string name="temp_username">Matone</string>
+    <string name="temp_date">2021.10.04</string>
+    <string name="temp_week">2021.10.04 ~ 2021.11.07</string>
+    <string name="temp_preference1">#사회기술-개인교류</string>
+    <string name="temp_preference2">#클래식</string>
+    <string name="temp_progress">40%</string>
+    <string name="temp_segment">3주차_즉흥 악기연주1</string>
+    <string name="temp_song_name">문어의 꿈</string>
+    <string name="temp_tag">#가요 #꿈 #경쾌</string>
+    <string name="temp_recommended_instrument">이번에는 카바사 연주~~</string>
+    <string name="temp_explain_text">
+        악기 사진을 선택하면, 악기의 소리가 들릴 거예요!\n악기마다 다 특이하고 신기한 소리가 나니까, 잘 들어보고 즉흥악기연주 활동에서 함께할 악기들을 골라주세요!\n
+        앞에서 골랐던 노래와 어울릴 것 같은 소리를 찾아도 좋고, (사용자 이름)님이 마음이 편해지는 소리를 고르셔도 좋아요\n
+        그럼 악기 소리를 들으러 가 볼까요?
+    </string>
+    <string name="mudicarian">Mudicarian</string>
+    <string name="songwriting">Song Writing</string>
+    <string name="instrumentplay">즉흥악기연주</string>
+    <string name="mudi_recommendation">뮤디의 추천</string>
+    <string name="my_info">내 정보</string>
+    <string name="my_progress">My Progress</string>
+    <string name="my_album">My Album</string>
+    <string name="goto_m_log">M-Log 보기</string>
+    <string name="next">다음</string>
+    <string name="save">저장하기</string>
+    <string name="qm">\?</string>
+    <string name="choose">선택하기</string>
+    <string name="finish">완료하기</string>
+    <string name="please_start_song">노래를 시작해 볼까요?</string>
+    <string name="practice_instrument">악기를 선택해서 소리를 들으면서 악기와 친해져 봐요!</string>
+    <string name="landscape_please">휴대전화를 가로 모드로\n설정해 주세요</string>
+    <string name="song1_title">Happy things</string>
+    <string name="song2_title">문어의 꿈</string>
+    <string name="song3_title">종이접기</string>
+    <string name="song4_title">내 동생</string>
+    <string name="song5_title">뱃노래</string>
+    <string name="song1_tag">#가요 #행복 #경쾌</string>
+    <string name="song2_tag">#가요 #꿈 #경쾌</string>
+    <string name="song3_tag">#동요 #친구 #동심</string>
+    <string name="song4_tag">#동요 #가족 #발랄</string>
+    <string name="song5_tag">#민요 #청춘 #회상</string>
+    <string name="instrument1_name">오션 드럼</string>
+    <string name="instrument2_name">에그 셰이커</string>
+    <string name="instrument3_name">Frog Scratch</string>
+    <string name="instrument4_name">레인스틱</string>
+    <string name="instrument5_name">스털 실로폰</string>
+    <string name="instrument6_name">챠임 트리</string>
+    <string name="instrument7_name">핑거 심벌즈</string>
+    <string name="instrument8_name">카바사</string>
+    <string name="songwriting_temp_full_text">
+나는 문어 꿈을 꾸는 문어 꿈속에서는 무엇이든지 될 수 있어\n
+나는 문어 잠을 자는 문어 잠에 드는 순간 여행이 시작되는 거야\n
+높은 산에 올라가면 나는 초록색 문어\n
+장미 꽃밭 숨어들면 나는 빨간색 문어\n
+횡단보도 건너가면 나는 줄무늬 문어\n
+밤하늘을 날아가면 나는 오색찬란한\n
+문어가 되는 거 야 아아아 아아 야 아아아 아아
+    </string>
+    <string name="song1_full_text">
+        좋아하는 노랠 들으며 걸어갈 때\n시간 맞춰 버스를 탈 때\n유난히 사람이 많은 출근길\n딱 내 앞에서 자리 났을 때\n예상대로 일이 술술 풀려갈 때\n이제부터 뭐든 내 멋대로 맘 먹을 때
+    </string>
+    <string name="song2_full_text">
+        나는 문어 꿈을 꾸는 문어\n꿈속에서는 무엇이든지 될 수 있어\n나는 문어 잠을 자는 문어\n잠에 드는 순간 여행이 시작되는 거야\n높은 산에 올라가면 나는 초록색 문어\n장미꽃 밭 숨어들면 나는 빨간색 문어\n횡단보도 건너가면 나는 줄무늬 문어\n밤하늘을 날아가면 나는 오색 찬란한\n문어가 되는 거야 아아아야아아아아아아
+    </string>
+    <string name="song3_full_text">
+        색종이를 곱~게 접어서\n물감으로 예쁘게 색칠하고\n알록 달록 오색실 꼬리 달아\n비행기를 만~들자\n솔솔 바람부는 뒷동산에\n동네 친구 모두 모여서\n파란 하늘 향해 날리면\n새처럼 날아간다
+    </string>
+    <string name="song4_full_text">
+        내 동생 곱슬머리 개구장이 내 동생\n이름은 하나인데 별명은 서너 개\n엄마가 부를 때는 꿀돼지\n아빠가 부를 때는 두꺼비\n누나가 부를 때는 왕자님\n어떤 게 진짜인지 몰라몰라 몰라
+    </string>
+    <string name="song5_full_text">
+        부딪히는 파도 소리 잠을 깨우니\n들려오는 노 소리 처량도 하구나\n어기야 디여차 어야 디야\n어기여차 뱃놀이 가잔다
+    </string>
+
+
+    <string name="example_comment_1">기쁨을 주변 사람들과 나눠 봅시다!</string>
+    <string name="example_comment_2">슬픈 감정을 밖으로 표출하고\n주위 사람들에게 나누면서 해소해 봐요..</string>
+    <string name="example_comment_3">화나는 일을 계속 떠올리는 대신\n즐거운 노래를 들으며 잊어 봐요..</string>
+    <string name="example_comment_4">두려운 일을 정확히 인식하고\n자신에게 용기를 복돋아 봐요 !!</string>
+    <string name="example_comment_5">감정이 고요한 상태네요.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

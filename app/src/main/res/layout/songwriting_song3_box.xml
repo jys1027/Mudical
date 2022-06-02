@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/song_full_text_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "색종이를" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "곱~게" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "접어서" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/song_full_text_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "물감으로" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "예쁘게" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "색칠하고" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/song_full_text_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "알록 달록" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "오색실" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "꼬리 달아" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/song_full_text_line4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "비행기를" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "만~들자" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/song_full_text_line5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "솔솔 바람부는" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "뒷동산" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "에" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/song_full_text_line6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "동네친구" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "모두 모여서" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/song_full_text_line7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "파란 하늘" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "향해" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "날리" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "면" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/song_full_text_line8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            android:background="@color/light_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "새처럼" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = " " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumsquareotf_acb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:text = "날아간다" />
+
+    </LinearLayout>
+
+</LinearLayout>

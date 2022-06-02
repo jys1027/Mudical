@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayTutorialMudi">
+        <item>안녕하세요?\n뮤디커리안을 도와 즐거운 여정을 함께하는\n음악치료 요정 뮤디입니다!</item>
+        <item>Mudical에 오신 여러분들은 환영합니다!\n이 어플리케이션에 대한 소개를 들으시겠어요?</item>
+        <item>Mudical은 Music과 Medical의 합성어로,\n음악치료 프로그램을 제공하는 어플리케이션이예요.</item>
+        <item>뮤디커리안이 되신 여러분들과 함께,\n치유적 음악 활동을 함께 해 나가면서 음악을 통해\n스스로를 경험하는 시간을 가질 수 있을 거예요!</item>
+        <item>그럼, (%s)님이 관심 있으신\n음악치료 영역은 무엇인지 알려주세요!</item>
+        <item>좋아요!\n치유적 음악 활동은, 개인의 경험에 따라\n다른 양상을 보일 수도 있다고 해요.</item>
+        <item>뮤디가 (%s) 님에게 꼭 맞는 활동을\n찾을 수 있게 (%s) 님에 대해\n알려주실 수 있으신가요?</item>
+        <item>좋아하시는 음악 장르를 알려주세요!</item>
+        <item>그럼 알려주신 정보를 바탕으로\n(%s) 님과 꼭 맞는 커리큘럼을 생성할게요!</item>
+    </string-array>
+
+    <string-array name="arrayTutorialChoose1">
+        <item>안녕, 뮤디야!</item>
+        <item>들려줘!</item>
+        <item></item>
+        <item>응, 알겠어.</item>
+        <item>사회기술-개인교류</item>
+        <item></item>
+        <item>물론이지!</item>
+        <item>대중가요</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="arrayTutorialChoose2">
+        <item>뮤디야, 반가워.</item>
+        <item>이미 알고 왔어.</item>
+        <item></item>
+        <item>그렇구나!</item>
+        <item>정서</item>
+        <item></item>
+        <item>지금은 안할래.</item>
+        <item>클래식</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="arrayTutorialChoose3">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>인지</item>
+        <item></item>
+        <item></item>
+        <item>팝송</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="arrayTutorialChoose4">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>운동</item>
+        <item></item>
+        <item></item>
+        <item>다른 거</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="arrayTutorialChoose5">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>생각 안 해봤어</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+</resources>
