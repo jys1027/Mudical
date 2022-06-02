@@ -324,7 +324,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             Log.d("emotion analyzed: ", "$emotionB (size $sizeB)")
 
             emotionSaved = mutableListOf(0.0, 0.0, 0.0, 0.0, 0.0)
-            emotionSaved[0] = emotionA[3] * 0.9 + emotionB[4] * 0.1
+            emotionSaved[0] = emotionA[3] * 0.9 + emotionB[4] * 0.1    //apply time interval gap
             emotionSaved[1] = emotionA[4] * 0.9 + emotionB[0] * 0.1
             emotionSaved[2] = emotionA[0] * 0.9 + emotionB[1] * 0.1
             emotionSaved[3] = emotionA[2] * 0.9 + emotionB[3] * 0.1
